@@ -22,7 +22,7 @@
     padding-left: 2em;
     padding-bottom: 2em;
     }
- 
+ // IMAGE PAGE D'ACCUEIL///////////////
     img{
       height: 30em;
 
@@ -31,4 +31,19 @@
       }
     }
   }
+// IMAGE PAGE MENU ///////////////
+  &__img-menu{
+    margin-bottom: 40px;
+    width: 85%;
+
+    @include smartphone{
+      height: 52em;
+    }
+
+    @include small {
+      height: 38em;
+    }
+    
+  }
+
 }
