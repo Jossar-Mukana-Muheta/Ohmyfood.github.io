@@ -34,8 +34,27 @@ h3 {
   padding-left: 10em;
   padding-bottom: 10em;
 }
+@media screen and (max-width: 768px) {
+  .card-menu__prev {
+    padding-right: 0em;
+    padding-left: 0em;
+    padding-bottom: 1em;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .card-menu__prev {
+    padding-right: 2em;
+    padding-left: 2em;
+    padding-bottom: 2em;
+  }
+}
 .card-menu__prev img {
   height: 30em;
+}
+@media screen and (max-width: 768px) {
+  .card-menu__prev img {
+    height: 20em;
+  }
 }
 
 .footer {
@@ -48,6 +67,7 @@ h3 {
 
 body {
   margin: 0;
+  margin-top: -31px;
 }
 
 article {
