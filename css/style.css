@@ -24,10 +24,30 @@ h3 {
   background-color: #569c87;
 }
 
+.card-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card-menu__prev {
+  padding-right: 10em;
+  padding-left: 10em;
+  padding-bottom: 10em;
+}
+.card-menu__prev img {
+  height: 30em;
+}
+
 .footer {
   display: flex;
   justify-content: space-between;
   background-color: #569c87;
+  position: sticky;
+  bottom: 0;
+}
+
+body {
+  margin: 0;
 }
 
 article {

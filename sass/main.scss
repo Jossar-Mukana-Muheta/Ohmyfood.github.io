@@ -5,6 +5,10 @@
 @import "./layouts/content";
 @import "./layouts/footer";
 
+body{
+  margin: 0;
+}
+
 article{
   text-align: center;
   display: flex;
