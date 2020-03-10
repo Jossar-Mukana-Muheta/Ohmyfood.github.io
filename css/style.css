@@ -48,6 +48,7 @@ h2 {
 }
 .card-menu__prev img {
   height: 30em;
+  box-shadow: 1px 1px 12px #555;
 }
 @media screen and (max-width: 768px) {
   .card-menu__prev img {

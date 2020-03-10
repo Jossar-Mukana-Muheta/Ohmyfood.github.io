@@ -25,6 +25,7 @@
  // IMAGE PAGE D'ACCUEIL///////////////
     img{
       height: 30em;
+      @include img-shadow;
 
       @include smartphone{
         height: 20em;
