@@ -1,6 +1,8 @@
 .header{
   text-align: center;
   background-color: $colour-primary;
-  
+  &__link{
+    text-decoration: none;  
+  }
 
 }

@@ -14,14 +14,12 @@ h2 {
   font-size: xx-large;
 }
 
-h3 {
-  color: #fcca46;
-  padding: 0.5rem;
-}
-
 .header {
   text-align: center;
   background-color: #569c87;
+}
+.header__link {
+  text-decoration: none;
 }
 
 .card-menu {
@@ -56,6 +54,20 @@ h3 {
     height: 20em;
   }
 }
+.card-menu__img-menu {
+  margin-bottom: 40px;
+  width: 85%;
+}
+@media screen and (max-width: 768px) {
+  .card-menu__img-menu {
+    height: 52em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .card-menu__img-menu {
+    height: 38em;
+  }
+}
 
 .footer {
   display: flex;
@@ -63,6 +75,12 @@ h3 {
   background-color: #569c87;
   position: sticky;
   bottom: 0;
+}
+.footer__link {
+  color: #fcca46;
+  padding-left: 0.9rem;
+  padding-right: 0.9rem;
+  text-decoration: none;
 }
 
 body {

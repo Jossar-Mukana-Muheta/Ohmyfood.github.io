@@ -5,5 +5,12 @@
   background-color: $colour-primary;
   position: sticky;
     bottom: 0;
+
+    &__link{
+      color: $colour-secondary;
+      padding-left: 0.9rem;
+     padding-right: 0.9rem;
+     text-decoration: none;
+    }
   
 }
