@@ -5,3 +5,21 @@
 @import "./layouts/content";
 @import "./layouts/footer";
 
+body{
+  margin: 0;
+}
+
+article{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+  h2{
+    padding: 0.5rem;
+    padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  background-color: $colour-primary;
+  border-radius: 10px;
+  }
+
+}

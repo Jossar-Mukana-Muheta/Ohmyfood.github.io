@@ -1,4 +1,22 @@
-.body{
+body{
   font-family: sans-serif;
-  background-color: $colour-primary;
+
+}
+
+h1{
+  font-weight: 800;
+  color: $colour-secondary;
+  font-size: -webkit-xxx-large;
+}
+
+h2{
+  font-weight: 700;
+  color: $colour-secondary;
+  font-size: xx-large;
+  
+}
+
+h3{
+  color: $colour-secondary;
+  padding: 0.5rem;
 }
