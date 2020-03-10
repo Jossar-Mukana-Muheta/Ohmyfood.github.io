@@ -1,0 +1,11 @@
+@mixin smartphone{
+  @media screen and (max-width: map-get($breakpoints, tablette)){
+    @content;
+  }
+}
+
+@mixin destock {
+  @media screen and (max-width: map-get($breakpoints, destock)){
+    @content;
+  }
+}

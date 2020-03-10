@@ -11,10 +11,24 @@
     padding-left: 10em;
     padding-bottom: 10em;
 
-  
+    @include smartphone{
+      padding-right: 0em;
+    padding-left: 0em;
+    padding-bottom: 1em;
+    }
 
+    @include destock{
+      padding-right: 2em;
+    padding-left: 2em;
+    padding-bottom: 2em;
+    }
+ 
     img{
       height: 30em;
+
+      @include smartphone{
+        height: 20em;
+      }
     }
   }
 }
