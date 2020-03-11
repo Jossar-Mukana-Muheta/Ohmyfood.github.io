@@ -11,6 +11,31 @@
     padding-left: 10em;
     padding-bottom: 10em;
 
+    ///////ZOOM IMAGE//////////////////
+
+figure {
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      overflow: hidden;
+      @include img-shadow;
+    }
+
+img{
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+figure:hover > img {
+	-webkit-transform: scale(1.3);
+  transform: scale(1.3);
+  opacity: 0.5;
+}
+
+///////////// RESPONSIVE ////////////////////////////
+
     @include smartphone{
       padding-right: 0em;
     padding-left: 0em;
@@ -25,13 +50,16 @@
  // IMAGE PAGE D'ACCUEIL///////////////
     img{
       height: 30em;
-      @include img-shadow;
+      
 
       @include smartphone{
         height: 20em;
       }
     }
+    
   }
+
+
 // IMAGE PAGE MENU ///////////////
   &__img-menu{
     margin-bottom: 40px;

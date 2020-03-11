@@ -32,6 +32,24 @@ h2 {
   padding-left: 10em;
   padding-bottom: 10em;
 }
+.card-menu__prev figure {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 1px 1px 12px #555;
+}
+.card-menu__prev img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.card-menu__prev figure:hover > img {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+  opacity: 0.5;
+}
 @media screen and (max-width: 768px) {
   .card-menu__prev {
     padding-right: 0em;
@@ -48,7 +66,6 @@ h2 {
 }
 .card-menu__prev img {
   height: 30em;
-  box-shadow: 1px 1px 12px #555;
 }
 @media screen and (max-width: 768px) {
   .card-menu__prev img {
