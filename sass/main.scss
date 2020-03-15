@@ -9,13 +9,26 @@
 
 body{
   margin: 0;
-  margin-top: -31px;
+  padding: 0;
+  height: 100%;
+  min-height: 100%;
+  
+  
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  max-height: 30em;
 }
 
 article{
   text-align: center;
   display: flex;
   justify-content: center;
+  margin-bottom: 4em;
+
+  
 
   h2{
     padding: 0.5rem;
