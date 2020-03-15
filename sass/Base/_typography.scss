@@ -1,12 +1,20 @@
 body{
   font-family: sans-serif;
 
+  @include smartphone{
+    font-size: 14px;
+  }
+
 }
 
 h1{
   font-weight: 700;
   color: $colour-secondary;
   font-size: -webkit-xxx-large;
+
+  @include smartphone{
+    font-size: x-large;
+  }
 
  
 }
@@ -16,5 +24,9 @@ h2{
   color: $colour-secondary;
   font-size: xx-large;
   
+  @include smartphone{
+    font-size: large;
+  }
+
 }
 

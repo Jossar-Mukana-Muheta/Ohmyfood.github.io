@@ -1,15 +1,21 @@
-.card-menu{
+.card_menu_top,.card_menu_bottom{
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: center;
+  margin-top: 2em;
   
-  
-
   &__prev{
 
     padding-right: 10em;
     padding-left: 10em;
     padding-bottom: 10em;
+
+    @include smartphone{
+      padding-right: 1em;
+    padding-left: 1em;
+    padding-bottom: 2em;
+    }
 
     ///////ZOOM IMAGE//////////////////
 
@@ -34,45 +40,8 @@ figure:hover > img {
   opacity: 0.5;
 }
 
-///////////// RESPONSIVE ////////////////////////////
-
-    @include smartphone{
-      padding-right: 0em;
-    padding-left: 0em;
-    padding-bottom: 1em;
-    }
-
-    @include destock{
-      padding-right: 2em;
-    padding-left: 2em;
-    padding-bottom: 2em;
-    }
- // IMAGE PAGE D'ACCUEIL///////////////
-    img{
-      height: 30em;
-      
-
-      @include smartphone{
-        height: 20em;
-      }
-    }
     
   }
 
-
-// IMAGE PAGE MENU ///////////////
-  &__img-menu{
-    margin-bottom: 40px;
-    width: 60%;
-
-    @include smartphone{
-      height: 52em;
-    }
-
-    @include small {
-      height: 38em;
-    }
-    
-  }
 
 }

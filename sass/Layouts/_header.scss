@@ -1,6 +1,13 @@
 .header{
   text-align: center;
   background-color: $colour-primary;
+
+  @include smartphone{
+    height: 4em;
+    padding-top: 1em;
+  }
+ 
+
   &__link{
     text-decoration: none;  
   }

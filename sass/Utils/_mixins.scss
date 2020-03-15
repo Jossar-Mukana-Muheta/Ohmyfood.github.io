@@ -1,22 +1,13 @@
-@mixin small {
-  @media screen and (max-width: map-get($breakpoints, mobile)){
+@mixin smartphone {
+  @media screen and (max-width: map-get($breakpoints, smartphone)){
     @content;
   }
 }
 
-@mixin smartphone{
-  @media screen and (max-width: map-get($breakpoints, tablette)){
-    @content;
-  }
-}
 
-@mixin destock {
-  @media screen and (max-width: map-get($breakpoints, destock)){
-    @content;
-  }
-}
+
 
 @mixin img_shadow {
-  box-shadow: 1px 1px 12px #555;
+  box-shadow: 1px 1px 3px lightgrey;
 }
 
