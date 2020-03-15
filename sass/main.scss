@@ -19,7 +19,8 @@ body{
 img{
   max-width: 100%;
   height: auto;
-  max-height: 20em;
+  max-height: 14em;
+
 
   @include desktop {
     max-height: 31em;
@@ -31,6 +32,7 @@ article{
   display: flex;
   justify-content: center;
   margin-bottom: 4em;
+    margin-top: 4em;
 
   
 
