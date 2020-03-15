@@ -1,10 +1,15 @@
 .header{
   text-align: center;
   background-color: $colour-primary;
+  margin-top: -2em;
 
   @include smartphone{
     height: 4em;
     padding-top: 1em;
+  }
+
+  @include desktop{
+    height: 4em;
   }
  
 

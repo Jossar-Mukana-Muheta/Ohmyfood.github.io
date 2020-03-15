@@ -1,7 +1,7 @@
 body {
   font-family: sans-serif;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   body {
     font-size: 14px;
   }
@@ -12,7 +12,7 @@ h1 {
   color: #fcca46;
   font-size: -webkit-xxx-large;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   h1 {
     font-size: x-large;
   }
@@ -23,7 +23,7 @@ h2 {
   color: #fcca46;
   font-size: xx-large;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   h2 {
     font-size: large;
   }
@@ -32,11 +32,17 @@ h2 {
 .header {
   text-align: center;
   background-color: #569c87;
+  margin-top: -2em;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .header {
     height: 4em;
     padding-top: 1em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header {
+    height: 4em;
   }
 }
 .header__link {
@@ -55,7 +61,7 @@ h2 {
   padding-left: 10em;
   padding-bottom: 10em;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .card_menu_top__prev, .card_menu_bottom__prev {
     padding-right: 1em;
     padding-left: 1em;
@@ -90,6 +96,11 @@ h2 {
   width: 100%;
   height: 3em;
 }
+@media screen and (min-width: 1024px) {
+  .footer {
+    height: 4em;
+  }
+}
 .footer__link {
   color: #fcca46;
   padding-left: 0.9rem;
@@ -107,7 +118,12 @@ body {
 img {
   max-width: 100%;
   height: auto;
-  max-height: 30em;
+  max-height: 20em;
+}
+@media screen and (min-width: 1024px) {
+  img {
+    max-height: 31em;
+  }
 }
 
 article {
