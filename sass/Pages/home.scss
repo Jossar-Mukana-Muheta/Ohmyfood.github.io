@@ -30,14 +30,20 @@ figure {
 }
 
 img{
-	-webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+transition: transform 500ms, opacity 700ms 20ms;
 }
 
 figure:hover > img {
-	-webkit-transform: scale(1.3);
-  transform: scale(1.3);
-  opacity: 0.5;
+  transform: scale(1.5);
+  opacity: 0.3;
 }
+
+.suspension{
+  display: none;
+}
+
+  .suspension:hover {
+    display: block;
+  }
+
+

@@ -1,0 +1,88 @@
+.content-menu1{
+  background-color: $colour-menu1;
+  
+
+  article{
+    margin-bottom: 0em;
+    margin-top: 0em;
+  }
+
+  h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #3d1319;
+  }
+
+  i{
+    background: -webkit-linear-gradient(90deg, #f15f62 0%, #f6916a 35%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  ul{
+    list-style: none;
+    text-align: left;
+        padding-right: 0.5em;
+        padding-left: 1.5em;
+  }
+
+  li{
+
+    @include smartphone{
+      margin-bottom: 0.5em;
+    }
+  }
+
+  &__header{
+
+    @include smartphone{
+      font-size: xx-large;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 0em;
+    }
+
+    
+
+  }
+
+  footer{
+    text-align: center;
+    
+    @include smartphone{
+      padding-bottom: 41px;
+    }
+  }
+}
+
+.content-menu1__entrees,.content-menu1__desserts,.content-menu1__plats{
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+.text_container{
+  display: flex;
+  
+
+  &__items{
+
+    @include smartphone{
+      font-size: 11px;
+    }
+  }
+
+  &__price{
+    @include smartphone{
+      font-size: 11px;
+    }
+
+    ul{
+      text-align: end;
+    }
+  
+  }
+}
+
+
+
