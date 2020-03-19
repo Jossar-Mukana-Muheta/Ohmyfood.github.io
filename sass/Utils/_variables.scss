@@ -17,7 +17,11 @@ $colour-menu3 : #EDEFEF;
 //Menu 4 color 
 $colour-menu4 : #FDFFFD;
 
-/// breakpoint map 
+// Darken hover image 
+$colour-darkenHover : darken(#ffff, 60%);
+
+
+/// breakpoint Responsive
 $breakpoints: (
   smartphone : 767px,
   desktop : 1024px,
