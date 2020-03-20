@@ -1,3 +1,33 @@
+.container{
+  height: 100%;
+ display: grid;
+ grid-template-rows: 10% 70% 10% 10%;
+}
+
+.header,
+.container-menu,
+.article,
+.footer{
+  display: grid-row;
+}
+
+
+.container-menu{
+  display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.5em;
+    grid-template-areas: 
+    "1 2"
+    "3 4";
+
+    &__items{
+
+      margin: auto;
+    }
+
+}
+
 .card_menu{
   display: flex;
   flex-direction: row;
@@ -21,6 +51,31 @@
 }
 
 
+article{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0em;
+  
+
+  
+
+  h2{
+    padding: 0.5rem;
+    padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  background-color: $colour-primary;
+  border-radius: 10px;
+
+  @include smaller{
+    font-size: medium;
+    
+  }
+  
+  }
+
+}
+
 figure {
   margin: 0;
   padding: 0;
@@ -30,14 +85,52 @@ figure {
 }
 
 img{
-	-webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+  background-color: #fff;
+  z-index: 1;
+transition: transform 1000ms ease-in-out, opacity 700ms 20ms;
+
 }
 
 figure:hover > img {
-	-webkit-transform: scale(1.3);
-  transform: scale(1.3);
-  opacity: 0.5;
+  transform: scale(1.5);
+  opacity: 0.3;
+ 
 }
+
+
+
+
+  .mention_text{
+  
+  
+
+    &:hover{
+
+      animation-name: wiggle  ;
+      animation-duration: 200ms ;
+     
+      animation-iteration-count: 2;
+  
+    
+    
+
+    }
+
+}
+
+@keyframes wiggle {
+  
+  25%{
+    transform: translateX(1%);
+  }
+  
+  75%{
+    transform: translateX(1% * -1 );
+  }
+  
+
+}
+
+
+
+

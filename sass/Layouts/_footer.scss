@@ -3,21 +3,20 @@
   display: flex;
   justify-content: space-between; 
   background-color: $colour-primary;
-    bottom: 0;
-    position: fixed;
-    width: 100%;
-    height: 3em;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
 
-    @include desktop{
-      height: 4em;
-    }
-  
-
-    &__link{
+  &__link{
       color: $colour-secondary;
       padding-left: 0.9rem;
      padding-right: 0.9rem;
      text-decoration: none;
+
+     @include smaller{
+      font-size: 13px;
+     }
     }
   
 }

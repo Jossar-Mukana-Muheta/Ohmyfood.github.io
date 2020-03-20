@@ -12,6 +12,10 @@ h1{
   color: $colour-secondary;
   font-size: -webkit-xxx-large;
 
+  @include smaller{
+    font-size: large;
+  }
+  
   @include smartphone{
     font-size: x-large;
   }
@@ -23,6 +27,10 @@ h2{
   font-weight: 700;
   color: $colour-secondary;
   font-size: xx-large;
+
+  @include smaller{
+    font-size: medium;
+  }
   
   @include smartphone{
     font-size: large;
