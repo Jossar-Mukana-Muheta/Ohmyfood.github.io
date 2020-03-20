@@ -60,16 +60,14 @@ h2 {
 }
 
 .container {
-  height: 100%;
   display: grid;
   grid-template-rows: 10% 70% 10% 10%;
+  min-height: 100vh;
 }
-
-.header,
-.container-menu,
-.article,
-.footer {
-  display: grid-row;
+@media screen and (min-width: 1025px) {
+  .container {
+    grid-gap: 38px;
+  }
 }
 
 .container-menu {
@@ -78,6 +76,19 @@ h2 {
   grid-template-columns: 1fr 1fr;
   grid-gap: 0.5em;
   grid-template-areas: "1 2" "3 4";
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .container-menu {
+    margin-inline-start: 15%;
+    margin-inline-end: 15%;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .container-menu {
+    margin-inline-start: 15%;
+    margin-inline-end: 15%;
+    row-gap: 38px;
+  }
 }
 .container-menu__items {
   margin: auto;
@@ -95,10 +106,14 @@ h2 {
 }
 
 article {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 0em;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: auto;
+}
+@media screen and (min-width: 1025px) {
+  article {
+    margin-bottom: 4em;
+  }
 }
 article h2 {
   padding: 0.5rem;
@@ -250,17 +265,16 @@ figure:hover > img {
 }
 
 body, html {
+  box-sizing: border-box;
   height: 100%;
 }
 
 body {
   margin: 0;
   padding: 0;
+  border: 0;
 }
 
-img {
-  height: auto;
-}
 @media screen and (max-width: 320px) {
   img {
     max-height: 11em;
@@ -278,7 +292,7 @@ img {
 }
 @media screen and (min-width: 1025px) {
   img {
-    max-height: 291px;
+    max-height: 350px;
   }
 }
 

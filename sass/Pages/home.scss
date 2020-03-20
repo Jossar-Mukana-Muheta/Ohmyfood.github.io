@@ -1,15 +1,13 @@
 .container{
-  height: 100%;
  display: grid;
  grid-template-rows: 10% 70% 10% 10%;
+ min-height: 100vh;
+
+ @include desktop{
+  grid-gap : 38px;
+ }
 }
 
-.header,
-.container-menu,
-.article,
-.footer{
-  display: grid-row;
-}
 
 
 .container-menu{
@@ -20,10 +18,22 @@
     grid-template-areas: 
     "1 2"
     "3 4";
+    
+
+    @include tablette{
+      margin-inline-start: 15%;
+      margin-inline-end: 15%;
+    }
+    
+    @include desktop{
+      margin-inline-start: 15%;
+    margin-inline-end: 15%;
+    row-gap: 38px;
+    }
 
     &__items{
 
-      margin: auto;
+      margin: auto; 
     }
 
 }
@@ -52,11 +62,14 @@
 
 
 article{
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 0em;
   
+  display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+
+    @include desktop{
+      margin-bottom: 4em;
+    }
 
   
 

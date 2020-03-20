@@ -9,6 +9,7 @@
 @import "./layouts/footer";
 
 body,html{
+  box-sizing: border-box;
   height: 100%;
   
   
@@ -17,14 +18,12 @@ body,html{
 body{
   margin: 0;
   padding: 0;
+  border: 0;
 }
 
 
 
 img{
-  height: auto;
- 
-  
 
 @include smaller{
   max-height: 11em;
@@ -39,7 +38,7 @@ img{
 }
 
 @include desktop{
-  max-height:291px;
+  max-height:350px;
 }
 
 }
