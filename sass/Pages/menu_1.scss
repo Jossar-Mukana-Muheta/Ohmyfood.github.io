@@ -1,22 +1,49 @@
-.content-menu1{
+.menu_1{
   background-color: $colour-menu1;
+}
+
+.content-menu1{
   
+  &__header{
 
-  article{
-    margin-bottom: 0em;
-    margin-top: 0em;
+    @include smartphone{
+      font-size: xx-large;
+    text-align: center;
+    padding-top: 0.2em;
+    padding-bottom: 0em;
+    margin-bottom: 0.5em;
+    }
+
+    
+
   }
 
-  h1{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #3d1319;
-  }
 
   i{
     background: -webkit-linear-gradient(90deg, #f15f62 0%, #f6916a 35%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    @include smartphone{
+      font-size: 40px;
+    }
   }
+  
+  .title{
+    font-size: 20px;
+  }
+
+   
+  h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #3d1319;
+
+    @include smartphone{
+      margin-bottom: 0.5em;
+    margin-top: 0;
+    font-size: 12px;
+    }
+  }
+
 
   ul{
     list-style: none;
@@ -32,38 +59,38 @@
     }
   }
 
-  &__header{
-
-    @include smartphone{
-      font-size: xx-large;
-    text-align: center;
-    padding-top: 1em;
-    padding-bottom: 0em;
-    }
-
-    
-
-  }
-
+  
   footer{
     text-align: center;
     
     @include smartphone{
-      padding-bottom: 41px;
+      
+      
+    }
+
+    .note_footer{
+      font-size: 16px;
     }
   }
+
 }
+
+
 
 .content-menu1__entrees,.content-menu1__desserts,.content-menu1__plats{
   display: flex;
   flex-direction: column;
-
+  
+  
 
 }
 
 .text_container{
   display: flex;
-  
+  @include smaller{
+    font-size: 9px;
+  }
+
 
   &__items{
 

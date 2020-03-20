@@ -1,5 +1,22 @@
+@mixin smaller {
+  @media screen and (max-width: map-get($breakpoints, very_small)){
+    @content;
+  }
+}
+
+
+
 @mixin smartphone {
-  @media screen and (max-width: map-get($breakpoints, smartphone)){
+  @media screen and (min-width: map-get($breakpoints, smartphone_min ))
+  and (max-width :map-get($breakpoints,smartphone_max )){
+    @content;
+  }
+}
+
+
+@mixin tablette {
+  @media screen and (min-width: map-get($breakpoints, tablette_min ))
+  and (max-width :map-get($breakpoints,tablette_max )){
     @content;
   }
 }
@@ -9,6 +26,7 @@
     @content;
   }
 }
+
 
 
 

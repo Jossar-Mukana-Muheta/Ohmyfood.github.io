@@ -1,3 +1,33 @@
+.container{
+  height: 100%;
+ display: grid;
+ grid-template-rows: 10% 70% 10% 10%;
+}
+
+.header,
+.container-menu,
+.article,
+.footer{
+  display: grid-row;
+}
+
+
+.container-menu{
+  display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.5em;
+    grid-template-areas: 
+    "1 2"
+    "3 4";
+
+    &__items{
+
+      margin: auto;
+    }
+
+}
+
 .card_menu{
   display: flex;
   flex-direction: row;
@@ -21,6 +51,31 @@
 }
 
 
+article{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0em;
+  
+
+  
+
+  h2{
+    padding: 0.5rem;
+    padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  background-color: $colour-primary;
+  border-radius: 10px;
+
+  @include smaller{
+    font-size: medium;
+    
+  }
+  
+  }
+
+}
+
 figure {
   margin: 0;
   padding: 0;
@@ -41,6 +96,7 @@ figure:hover > img {
   opacity: 0.3;
  
 }
+
 
 
 

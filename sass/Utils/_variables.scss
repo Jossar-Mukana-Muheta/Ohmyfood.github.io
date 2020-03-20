@@ -23,7 +23,11 @@ $colour-darkenHover : darken(#ffff, 60%);
 
 /// breakpoint Responsive
 $breakpoints: (
-  smartphone : 767px,
-  desktop : 1024px,
+  very_small : 320px,
+  smartphone_min : 321px,
+  smartphone_max : 767px,
+  tablette_min : 768px,
+  tablette_max : 1024px,
+  desktop : 1025px,
   
 );
