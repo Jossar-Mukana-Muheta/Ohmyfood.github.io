@@ -1,23 +1,18 @@
-.header{
+.header {
   text-align: center;
   background-color: $colour-primary;
 
-  &__link{
-    text-decoration: none;  
+  &__link {
+    text-decoration: none;
   }
-
 }
 
-.header_title{
-
-
-  @include smartphone{
+.header_title {
+  @include smartphone {
     font-size: x-large;
   }
 
-
-
-  @include tablette{
+  @include tablette {
     font-size: 56px;
     letter-spacing: 4px;
   }

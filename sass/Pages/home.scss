@@ -1,92 +1,70 @@
-.container{
- display: grid;
- grid-template-rows: 10% 70% 10% 10%;
- min-height: 100vh;
+.container {
+  display: grid;
+  grid-template-rows: 10% 70% 10% 10%;
+  min-height: 100vh;
 
- @include desktop{
-  grid-gap : 38px;
- }
+  @include desktop {
+    grid-gap: 38px;
+  }
 }
 
-
-
-.container-menu{
+.container-menu {
   display: grid;
-    grid-template-rows: 50% 50%;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 0.5em;
-    grid-template-areas: 
-    "1 2"
-    "3 4";
-    
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0.5em;
+  grid-template-areas:
+    '1 2'
+    '3 4';
 
-    @include tablette{
-      margin-inline-start: 15%;
-      margin-inline-end: 15%;
-    }
-    
-    @include desktop{
-      margin-inline-start: 15%;
+  @include tablette {
+    margin-inline-start: 15%;
+    margin-inline-end: 15%;
+  }
+
+  @include desktop {
+    margin-inline-start: 15%;
     margin-inline-end: 15%;
     row-gap: 38px;
-    }
+  }
 
-    &__items{
-
-      margin: auto; 
-    }
-
+  &__items {
+    margin: auto;
+  }
 }
 
-.card_menu{
+.card_menu {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   margin-top: 2em;
   justify-content: space-evenly;
-  
-  &__prev{
 
+  &__prev {
     margin-right: 2em;
-
-    
-
-    ///////ZOOM IMAGE//////////////////
-
-
-    
   }
-
-
 }
 
-
-article{
-  
+article {
   display: grid;
-    grid-template-columns: 1fr;
-    margin: auto;
+  grid-template-columns: 1fr;
+  margin: auto;
 
-    @include desktop{
-      margin-bottom: 4em;
-    }
+  @include desktop {
+    margin-bottom: 4em;
+  }
 
-  
-
-  h2{
+  h2 {
     padding: 0.5rem;
     padding-left: 2.5rem;
-  padding-right: 2.5rem;
-  background-color: $colour-primary;
-  border-radius: 10px;
+    padding-right: 2.5rem;
+    background-color: $colour-primary;
+    border-radius: 10px;
 
-  @include smaller{
-    font-size: medium;
-    
+    @include smaller {
+      font-size: medium;
+    }
   }
-  
-  }
-
 }
 
 figure {
@@ -97,53 +75,32 @@ figure {
   @include img-shadow;
 }
 
-img{
+img {
   background-color: #fff;
   z-index: 1;
-transition: transform 1000ms ease-in-out, opacity 700ms 20ms;
-
+  transition: transform 1000ms ease-in-out, opacity 700ms 20ms;
 }
 
 figure:hover > img {
   transform: scale(1.5);
   opacity: 0.3;
- 
 }
 
+.mention_text {
+  &:hover {
+    animation-name: wiggle;
+    animation-duration: 200ms;
 
-
-
-  .mention_text{
-  
-  
-
-    &:hover{
-
-      animation-name: wiggle  ;
-      animation-duration: 200ms ;
-     
-      animation-iteration-count: 2;
-  
-    
-    
-
-    }
-
+    animation-iteration-count: 2;
+  }
 }
 
 @keyframes wiggle {
-  
-  25%{
+  25% {
     transform: translateX(1%);
   }
-  
-  75%{
-    transform: translateX(1% * -1 );
+
+  75% {
+    transform: translateX(1% * -1);
   }
-  
-
 }
-
-
-
-

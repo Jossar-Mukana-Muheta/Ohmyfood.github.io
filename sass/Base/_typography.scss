@@ -1,40 +1,35 @@
-body{
+body {
   font-family: sans-serif;
 
-  @include smartphone{
+  @include smartphone {
     font-size: 14px;
   }
-
 }
 
-h1{
+h1 {
   font-weight: 700;
   color: $colour-secondary;
   font-size: -webkit-xxx-large;
 
-  @include smaller{
+  @include smaller {
     font-size: large;
   }
-  
-  @include smartphone{
+
+  @include smartphone {
     font-size: x-large;
   }
-
- 
 }
 
-h2{
+h2 {
   font-weight: 700;
   color: $colour-secondary;
   font-size: xx-large;
 
-  @include smaller{
+  @include smaller {
     font-size: medium;
   }
-  
-  @include smartphone{
+
+  @include smartphone {
     font-size: large;
   }
-
 }
-
