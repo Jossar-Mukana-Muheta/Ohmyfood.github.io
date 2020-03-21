@@ -1,13 +1,54 @@
+/////////////////////////CONTAINER///////////////////////////////////////////////////////////////
+.container_page{
+  
+  display: grid;
+    grid-template-rows: 10% 5% 75% 10%;
+    min-height: 100vh;
+}
+
 
 .container-menu_1 {
+  font-family: serif;
+    font-style: italic;
   background-color: $colour-menu1;
   display: grid;
-  min-height: 100vh;
-  grid-template-rows: 10% 80% 10%;
+  min-height: 70vh;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    @include img_shadow;
+
+  @include smaller{
+    margin-top: 1em;
+    margin-left: 1.1em;
+    margin-right: 1.1em;
+  }
 
   @include smartphone{
     grid-gap : 10px;
+    margin-left: 2em;
+    margin-right: 2em;
   }
+
+  @include tablette{
+    margin-top: 2em;
+    margin-bottom: 4em;
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+
+  @include desktop{
+    margin-left: 10em;
+    margin-right: 10em;
+    margin-top: 2em;
+    margin-bottom: -26em;
+  }
+
+i{
+  background: -webkit-linear-gradient(90deg, #f15f62 0%, #f6916a 35%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+}
+
   &__header {
     @include smartphone {
       font-size: xx-large;
@@ -16,14 +57,7 @@
     }
   }
 
-  i {
-    background: -webkit-linear-gradient(90deg, #f15f62 0%, #f6916a 35%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    @include smartphone {
-      font-size: 40px;
-    }
-  }
+  
 
 
 
@@ -32,6 +66,7 @@
     color: #3d1319;
     font-size: 30px;
     margin: 0;
+    font-family: 'Gochi Hand', cursive;
 
     @include smaller{
       font-size: 14px;
@@ -44,6 +79,7 @@
     @include tablette{
       font-size: 25px;
     }
+    
 
     &.header_title{
       color: $colour-secondary;
@@ -63,20 +99,26 @@
 
     &.title{
 
-      font-size: 40px;
+      font-size: 60px;
 
       @include smaller{
         font-size: 19px;
       }
-  
+
       @include smartphone{
-        font-size: 18px;
+        font-size: 25px;
+      }
+  
+      @include tablette{
+    font-size: 50px;
       }
   
       
     }
 
   }
+
+  
 
   ul {
     list-style: none;
@@ -91,21 +133,111 @@
     }
   }
 
-  footer {
-    text-align: center;
+}
 
-    @include smartphone {
+/////////////////////////CONTENT///////////////////////////////////////////////////////////////
+.menu_name{
+  text-align: center;
+  font-weight: bolder;
+    font-size: xx-large;
+    @include smaller{
+      font-size: medium;
     }
 
-    .note_footer {
-      font-size: 16px;
+    @include smartphone{
+      font-size: x-large;
     }
-  }
 }
 
 .content-menu_1{
   display: grid;
   grid-template-rows: 20% 20% 20% 20% 20%;
+
+  @include desktop{
+    grid-gap: 1.3em;
+  }
+
+  header{
+    text-align: center;
+    margin-top: 1em;
+
+    .title_1{
+      @include smaller{
+        font-size: 19px;
+      }
+      @include smartphone{
+        font-size: 22px;
+      }@include tablette{
+        font-size:30px ;
+      }
+      @include desktop{
+        font-size: 40px;
+      }
+      
+    }
+    i {
+      
+      @include smaller{
+        font-size: 26px;
+      }
+  
+      @include smartphone{
+        font-size: 40px;
+      }
+  
+      @include tablette{
+        font-size: 60px;
+      }
+  
+      @include desktop{
+        font-size: 65px;
+      }
+    }
+
+  }
+
+ 
+
+  footer{
+    margin-top: 1em;
+    text-align: center;
+.title_2{
+  
+  @include smaller{
+    font-size: 14px;
+  }
+  @include smartphone{
+    font-size: 18px;
+  }@include tablette{
+    font-size:24px ;
+  }
+  @include desktop{
+    font-size: 30px;
+  }
+}
+
+    i{
+
+      @include smaller{
+        font-size: 16px;
+      }
+  
+      @include smartphone{
+        font-size: 30px;
+      }
+  
+      @include tablette{
+        font-size: 50px;
+      }
+  
+      @include desktop{
+        font-size: 45px;
+      }
+  
+    }
+  }
+
+  
 }
 
 .content-menu1__entrees,
@@ -113,11 +245,19 @@
 .content-menu1__plats {
   display: flex;
   flex-direction: column;
+
+  h1{
+    text-align: center;
+  }
 }
 
 .text_container {
   display: flex;
   @include smaller {
+    font-size: 9px;
+  }
+
+  @include smartphone{
     font-size: 9px;
   }
 
@@ -128,7 +268,7 @@
     @include smartphone{
       font-size: 10px;
     }
-    @include smartphone{
+    @include tablette{
       font-size: 17px;
     }
   }
@@ -140,7 +280,7 @@
     @include smartphone{
       font-size: 10px;
     }
-    @include smartphone{
+    @include tablette{
       font-size: 17px;
     }
 
@@ -149,3 +289,4 @@
     }
   }
 }
+
