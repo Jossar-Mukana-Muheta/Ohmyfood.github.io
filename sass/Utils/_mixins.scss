@@ -1,37 +1,27 @@
 @mixin smaller {
-  @media screen and (max-width: map-get($breakpoints, very_small)){
+  @media screen and (max-width: map-get($breakpoints, very_small)) {
     @content;
   }
 }
-
-
 
 @mixin smartphone {
-  @media screen and (min-width: map-get($breakpoints, smartphone_min ))
-  and (max-width :map-get($breakpoints,smartphone_max )){
+  @media screen and (min-width: map-get($breakpoints, smartphone_min )) and (max-width: map-get($breakpoints,smartphone_max )) {
     @content;
   }
 }
 
-
 @mixin tablette {
-  @media screen and (min-width: map-get($breakpoints, tablette_min ))
-  and (max-width :map-get($breakpoints,tablette_max )){
+  @media screen and (min-width: map-get($breakpoints, tablette_min )) and (max-width: map-get($breakpoints,tablette_max )) {
     @content;
   }
 }
 
 @mixin desktop {
-  @media screen and (min-width: map-get($breakpoints, desktop)){
+  @media screen and (min-width: map-get($breakpoints, desktop)) {
     @content;
   }
 }
 
-
-
-
-
 @mixin img_shadow {
   box-shadow: 1px 1px 3px lightgrey;
 }
-

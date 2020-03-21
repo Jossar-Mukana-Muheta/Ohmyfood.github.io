@@ -1,22 +1,20 @@
-
-.footer{
+.footer {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   background-color: $colour-primary;
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
 
-  &__link{
-      color: $colour-secondary;
-      padding-left: 0.9rem;
-     padding-right: 0.9rem;
-     text-decoration: none;
+  &__link {
+    color: $colour-secondary;
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+    text-decoration: none;
 
-     @include smaller{
+    @include smaller {
       font-size: 13px;
-     }
     }
-  
+  }
 }

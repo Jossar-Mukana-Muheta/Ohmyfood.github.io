@@ -1,115 +1,151 @@
-.menu_1{
+
+.container-menu_1 {
   background-color: $colour-menu1;
-}
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: 10% 80% 10%;
 
-.content-menu1{
-  
-  &__header{
-
-    @include smartphone{
+  @include smartphone{
+    grid-gap : 10px;
+  }
+  &__header {
+    @include smartphone {
       font-size: xx-large;
-    text-align: center;
-    padding-top: 0.2em;
-    padding-bottom: 0em;
-    margin-bottom: 0.5em;
+      text-align: center;
+      
     }
-
-    
-
   }
 
-
-  i{
+  i {
     background: -webkit-linear-gradient(90deg, #f15f62 0%, #f6916a 35%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    @include smartphone{
+    @include smartphone {
       font-size: 40px;
     }
   }
-  
-  .title{
-    font-size: 20px;
-  }
 
-   
-  h1{
+
+
+  h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #3d1319;
+    font-size: 30px;
+    margin: 0;
+
+    @include smaller{
+      font-size: 14px;
+    }
 
     @include smartphone{
-      margin-bottom: 0.5em;
-    margin-top: 0;
-    font-size: 12px;
+      font-size: 13px;
     }
+
+    @include tablette{
+      font-size: 25px;
+    }
+
+    &.header_title{
+      color: $colour-secondary;
+      font-size: 23px;
+
+      @include tablette{
+        font-size: 42px;
+
+      }
+
+      @include desktop{
+        font-size: -webkit-xxx-large;
+      }
+
+
+    }
+
+    &.title{
+
+      font-size: 40px;
+
+      @include smaller{
+        font-size: 19px;
+      }
+  
+      @include smartphone{
+        font-size: 18px;
+      }
+  
+      
+    }
+
   }
 
-
-  ul{
+  ul {
     list-style: none;
     text-align: left;
-        padding-right: 0.5em;
-        padding-left: 1.5em;
+    padding-right: 0.5em;
+    padding-left: 1.5em;
   }
 
-  li{
-
-    @include smartphone{
+  li {
+    @include smartphone {
       margin-bottom: 0.5em;
     }
   }
 
-  
-  footer{
+  footer {
     text-align: center;
-    
-    @include smartphone{
-      
-      
+
+    @include smartphone {
     }
 
-    .note_footer{
+    .note_footer {
       font-size: 16px;
     }
   }
-
 }
 
+.content-menu_1{
+  display: grid;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
 
-
-.content-menu1__entrees,.content-menu1__desserts,.content-menu1__plats{
+.content-menu1__entrees,
+.content-menu1__desserts,
+.content-menu1__plats {
   display: flex;
   flex-direction: column;
-  
-  
-
 }
 
-.text_container{
+.text_container {
   display: flex;
-  @include smaller{
+  @include smaller {
     font-size: 9px;
   }
 
-
-  &__items{
-
+  &__items {
+    @include smaller {
+      font-size: 9px;
+    }
     @include smartphone{
-      font-size: 11px;
+      font-size: 10px;
+    }
+    @include smartphone{
+      font-size: 17px;
     }
   }
 
-  &__price{
+  &__price {
+    @include smaller {
+      font-size: 9px;
+    }
     @include smartphone{
-      font-size: 11px;
+      font-size: 10px;
+    }
+    @include smartphone{
+      font-size: 17px;
     }
 
-    ul{
+    ul {
       text-align: end;
     }
-  
   }
 }
-
-
-
