@@ -74,33 +74,3 @@ figure {
   overflow: hidden;
   @include img-shadow;
 }
-
-img {
-  background-color: #fff;
-  z-index: 1;
-  transition: transform 1000ms ease-in-out, opacity 700ms 20ms;
-}
-
-figure:hover > img {
-  transform: scale(1.5);
-  opacity: 0.3;
-}
-
-.mention_text {
-  &:hover {
-    animation-name: wiggle;
-    animation-duration: 200ms;
-
-    animation-iteration-count: 2;
-  }
-}
-
-@keyframes wiggle {
-  25% {
-    transform: translateX(1%);
-  }
-
-  75% {
-    transform: translateX(1% * -1);
-  }
-}
