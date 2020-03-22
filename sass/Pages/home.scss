@@ -18,13 +18,13 @@
     '3 4';
 
   @include tablette {
-    margin-inline-start: 15%;
-    margin-inline-end: 15%;
+    margin-left: 15%;
+    margin-right: 15%;
   }
 
   @include desktop {
-    margin-inline-start: 15%;
-    margin-inline-end: 15%;
+    margin-left: 15%;
+    margin-right: 15%;
     row-gap: 38px;
   }
 
