@@ -1,25 +1,25 @@
 //////////////// POINT DE SUSPENSSION PAGE ACCUEIL////////////////////////////
 
 .point:nth-child(1) {
-  transition-property: transform 1000ms;
+  transition-property:  1000ms;
   transition-delay: 100ms;
   visibility: hidden;
 }
 
 .point:nth-child(2) {
-  transition-property: transform 1000ms;
+  transition-property:  1000ms;
   transition-delay: 200ms;
   visibility: hidden;
 }
 
 .point:nth-child(3) {
-  transition-property: transform 1000ms;
+  transition-property:  1000ms;
   transition-delay: 300ms;
   visibility: hidden;
 }
 
 .point:nth-child(4) {
-  transition-property: transform 1000ms;
+  transition-property:  1000ms;
   transition-delay: 400ms;
   visibility: hidden;
 }
@@ -75,13 +75,14 @@ figure:hover > img {
   0%{
     width: 0%;
   }100%{
-    width: 100%;
+    width: 50%;
   }
 }
 
 span.souligner{
   border-top: hotpink solid 3px;
   width: 0%;
+  margin-left: 30%;
 }
 
 .entree_plat_dessert:hover + span{

@@ -40,25 +40,25 @@ h2 {
 }
 
 .point:nth-child(1) {
-  transition-property: transform 1000ms;
+  transition-property: 1000ms;
   transition-delay: 100ms;
   visibility: hidden;
 }
 
 .point:nth-child(2) {
-  transition-property: transform 1000ms;
+  transition-property: 1000ms;
   transition-delay: 200ms;
   visibility: hidden;
 }
 
 .point:nth-child(3) {
-  transition-property: transform 1000ms;
+  transition-property: 1000ms;
   transition-delay: 300ms;
   visibility: hidden;
 }
 
 .point:nth-child(4) {
-  transition-property: transform 1000ms;
+  transition-property: 1000ms;
   transition-delay: 400ms;
   visibility: hidden;
 }
@@ -98,12 +98,13 @@ figure:hover > img {
     width: 0%;
   }
   100% {
-    width: 100%;
+    width: 50%;
   }
 }
 span.souligner {
   border-top: hotpink solid 3px;
   width: 0%;
+  margin-left: 30%;
 }
 
 .entree_plat_dessert:hover + span {
@@ -151,14 +152,14 @@ span.souligner {
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .container-menu {
-    margin-inline-start: 15%;
-    margin-inline-end: 15%;
+    margin-left: 15%;
+    margin-right: 15%;
   }
 }
 @media screen and (min-width: 1025px) {
   .container-menu {
-    margin-inline-start: 15%;
-    margin-inline-end: 15%;
+    margin-left: 15%;
+    margin-right: 15%;
     row-gap: 38px;
   }
 }
