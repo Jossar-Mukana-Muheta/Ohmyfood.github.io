@@ -28,6 +28,10 @@ margin-bottom: -1em;
   font-size: xx-large;
 }
 
+@include desktop{
+  font-size: 52px;
+}
+
 
   }
 
@@ -52,6 +56,10 @@ margin-bottom: -1em;
 
       @include tablette{
         font-size: x-large;
+      }
+
+      @include desktop{
+        font-size: 35px;
       }
     }
 

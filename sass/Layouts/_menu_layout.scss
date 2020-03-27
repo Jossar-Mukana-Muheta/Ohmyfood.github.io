@@ -29,6 +29,10 @@
     @include tablette{
       font-size: xx-large;
     }
+
+    @include desktop{
+      font-size: 45px;
+    }
   }
 
   h3{
@@ -41,6 +45,10 @@
     @include tablette{
       font-size: x-large;
     }
+
+    @include desktop{
+      font-size : 35px;
+    }
   }
 
   
@@ -51,6 +59,10 @@
   margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 5%;
+    
+    @include desktop{
+      height: max-content;
+    }
 }
 
 .menu_title{
@@ -100,17 +112,21 @@
 
 ul{
   list-style: none;
-  font-size: 6px;
+  font-size: 8px;
   text-align: end;
   font-family: sans-serif;
   padding-inline-start: 0px;
 
   @include smartphone{
-    font-size: 9px;
+    font-size: 6px;
 
   }
 
   @include tablette{
-    font-size:12px ;
+    font-size:medium ;
+  }
+
+  @include desktop{
+    font-size: 20px;
   }
 }

@@ -254,6 +254,11 @@ figure {
     font-size: xx-large;
   }
 }
+@media screen and (min-width: 1025px) {
+  .menu_title.menu_1 i {
+    font-size: 52px;
+  }
+}
 .menu_title.menu_1 h2 {
   color: #3d1319;
   font-family: "Nanum Pen Script", cursive;
@@ -276,6 +281,11 @@ figure {
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .menu_title.menu_1.menu_footer i {
     font-size: x-large;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .menu_title.menu_1.menu_footer i {
+    font-size: 35px;
   }
 }
 
@@ -329,6 +339,11 @@ figure {
     font-size: xx-large;
   }
 }
+@media screen and (min-width: 1025px) {
+  .container_menu h2 {
+    font-size: 45px;
+  }
+}
 .container_menu h3 {
   font-size: small;
 }
@@ -342,11 +357,21 @@ figure {
     font-size: x-large;
   }
 }
+@media screen and (min-width: 1025px) {
+  .container_menu h3 {
+    font-size: 35px;
+  }
+}
 
 .content_menu {
   margin-left: 10%;
   margin-right: 10%;
   margin-bottom: 5%;
+}
+@media screen and (min-width: 1025px) {
+  .content_menu {
+    height: max-content;
+  }
 }
 
 .menu_title {
@@ -387,19 +412,24 @@ figure {
 
 ul {
   list-style: none;
-  font-size: 6px;
+  font-size: 8px;
   text-align: end;
   font-family: sans-serif;
   padding-inline-start: 0px;
 }
 @media screen and (min-width: 321px) and (max-width: 767px) {
   ul {
-    font-size: 9px;
+    font-size: 6px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   ul {
-    font-size: 12px;
+    font-size: medium;
+  }
+}
+@media screen and (min-width: 1025px) {
+  ul {
+    font-size: 20px;
   }
 }
 
