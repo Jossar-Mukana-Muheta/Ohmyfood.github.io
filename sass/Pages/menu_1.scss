@@ -1,292 +1,58 @@
-/////////////////////////CONTAINER///////////////////////////////////////////////////////////////
-.container_page{
-  
-  display: grid;
-    grid-template-rows: 10% 5% 75% 10%;
-    min-height: 100vh;
+.content_menu{
+  background-color: $colour-menu1;
 }
 
-
-.container-menu_1 {
-  font-family: serif;
-    font-style: italic;
-  background-color: $colour-menu1;
-  display: grid;
-  min-height: 70vh;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    @include img_shadow;
-
-  @include smaller{
-    margin-top: 1em;
-    margin-left: 1.1em;
-    margin-right: 1.1em;
-  }
-
-  @include smartphone{
-    grid-gap : 10px;
-    margin-left: 2em;
-    margin-right: 2em;
-  }
+.content_menu.menu_1{
+  font-family: 'Nanum Pen Script', cursive;
+  color: #3d1319;
 
   @include tablette{
-    margin-top: 2em;
-    margin-bottom: 4em;
-    margin-left: 3em;
-    margin-right: 3em;
+    margin-top: 15px;
   }
-
-  @include desktop{
-    margin-left: 10em;
-    margin-right: 10em;
-    margin-top: 2em;
-    margin-bottom: -26em;
-  }
-
-i{
-  background: -webkit-linear-gradient(90deg, #f15f62 0%, #f6916a 35%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
 }
 
-  &__header {
-    @include smartphone {
-      font-size: xx-large;
-      text-align: center;
-      
-    }
-  }
-
-  
-
-
-
-  h1 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #3d1319;
-    font-size: 30px;
-    margin: 0;
-    font-family: 'Gochi Hand', cursive;
-
-    @include smaller{
-      font-size: 14px;
-    }
-
-    @include smartphone{
-      font-size: 13px;
-    }
-
-    @include tablette{
-      font-size: 25px;
-    }
-    
-
-    &.header_title{
-      color: $colour-secondary;
-      font-size: 23px;
-
-      @include tablette{
-        font-size: 42px;
-
-      }
-
-      @include desktop{
-        font-size: -webkit-xxx-large;
-      }
-
-
-    }
-
-    &.title{
-
-      font-size: 60px;
-
-      @include smaller{
-        font-size: 19px;
-      }
-
-      @include smartphone{
-        font-size: 25px;
-      }
-  
-      @include tablette{
-    font-size: 50px;
-      }
-  
-      
-    }
-
-  }
-
-  
-
-  ul {
-    list-style: none;
-    text-align: left;
-    padding-right: 0.5em;
-    padding-left: 1.5em;
-  }
-
-  li {
-    @include smartphone {
-      margin-bottom: 0.5em;
-    }
-  }
-
-}
-
-/////////////////////////CONTENT///////////////////////////////////////////////////////////////
-.menu_name{
-  text-align: center;
-  font-weight: bolder;
-    font-size: xx-large;
-    @include smaller{
-      font-size: medium;
-    }
-
-    @include smartphone{
-      font-size: x-large;
-    }
-}
-
-.content-menu_1{
-  display: grid;
-  grid-template-rows: 20% 20% 20% 20% 20%;
-
-  @include desktop{
-    grid-gap: 1.3em;
-  }
-
-  header{
-    text-align: center;
-    margin-top: 1em;
-
-    .title_1{
-      @include smaller{
-        font-size: 19px;
-      }
-      @include smartphone{
-        font-size: 22px;
-      }@include tablette{
-        font-size:30px ;
-      }
-      @include desktop{
-        font-size: 40px;
-      }
-      
-    }
-    i {
-      
-      @include smaller{
-        font-size: 26px;
-      }
-  
-      @include smartphone{
-        font-size: 40px;
-      }
-  
-      @include tablette{
-        font-size: 60px;
-      }
-  
-      @include desktop{
-        font-size: 65px;
-      }
-    }
-
-  }
-
+.menu_title.menu_1{
  
 
-  footer{
-    margin-top: 1em;
-    text-align: center;
-.title_2{
   
-  @include smaller{
-    font-size: 14px;
+
+  i{
+    background: -webkit-linear-gradient(#da5031,#d67835);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-size: larger;
+
+margin-bottom: -1em;
+
+@include tablette{
+  font-size: xx-large;
+}
+
+
   }
-  @include smartphone{
-    font-size: 18px;
-  }@include tablette{
-    font-size:24px ;
-  }
-  @include desktop{
-    font-size: 30px;
+
+  h2{
+    color: #3d1319;
+    font-family: 'Nanum Pen Script', cursive;
   }
 }
 
+.line.menu_1{
+  border-top: 2px solid #3d1319;
+}
+
+.menu_title.menu_1.menu_footer{
+  display: flex;
+    flex-direction: row;
+    margin-top: 0.5em;
+    justify-content: center;
+    align-items: baseline;
     i{
+      font-size: small;
 
-      @include smaller{
-        font-size: 16px;
-      }
-  
-      @include smartphone{
-        font-size: 30px;
-      }
-  
       @include tablette{
-        font-size: 50px;
+        font-size: x-large;
       }
-  
-      @include desktop{
-        font-size: 45px;
-      }
-  
     }
-  }
 
-  
 }
-
-.content-menu1__entrees,
-.content-menu1__desserts,
-.content-menu1__plats {
-  display: flex;
-  flex-direction: column;
-
-  h1{
-    text-align: center;
-  }
-}
-
-.text_container {
-  display: flex;
-  @include smaller {
-    font-size: 9px;
-  }
-
-  @include smartphone{
-    font-size: 9px;
-  }
-
-  &__items {
-    @include smaller {
-      font-size: 9px;
-    }
-    @include smartphone{
-      font-size: 10px;
-    }
-    @include tablette{
-      font-size: 17px;
-    }
-  }
-
-  &__price {
-    @include smaller {
-      font-size: 9px;
-    }
-    @include smartphone{
-      font-size: 10px;
-    }
-    @include tablette{
-      font-size: 17px;
-    }
-
-    ul {
-      text-align: end;
-    }
-  }
-}
-

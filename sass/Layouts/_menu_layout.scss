@@ -1,0 +1,116 @@
+.container_page{
+  
+  display: grid;
+    grid-template-rows: 10% 80% 10%;
+    min-height: 100vh;
+}
+
+.container_menu{
+
+  display: grid;
+  grid-template-rows: 10% 90%;
+
+  h1{
+    
+    color: black;
+    text-align: center;
+
+    @include desktop{
+      font-size: xx-large;
+    }
+  }
+
+  h2{
+
+    @include smartphone{
+      font-size: x-large;
+    }
+
+    @include tablette{
+      font-size: xx-large;
+    }
+  }
+
+  h3{
+    font-size: small;
+
+    @include smartphone{
+      font-size: large;
+    }
+
+    @include tablette{
+      font-size: x-large;
+    }
+  }
+
+  
+
+}
+
+.content_menu{
+  margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+}
+
+.menu_title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.5em;
+
+    i{
+      background: -webkit-linear-gradient(#da5031,#d67835);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    }
+}
+
+
+.entree_title,.plat_title,.dessert_title{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+
+.line{
+  align-self: center;
+  width: 23%;
+  
+}
+
+.entree_content,.plat_content,.dessert_content{
+  display: flex;
+  justify-content: space-around;
+
+  .entree_text,.plat_text,.dessert_text{
+    flex-shrink : 1;
+
+    ul{
+      text-align: start;
+    }
+
+  }
+
+  .price{
+    flex-shrink : 3;
+  }
+}
+
+ul{
+  list-style: none;
+  font-size: 6px;
+  text-align: end;
+  font-family: sans-serif;
+  padding-inline-start: 0px;
+
+  @include smartphone{
+    font-size: 9px;
+
+  }
+
+  @include tablette{
+    font-size:12px ;
+  }
+}
