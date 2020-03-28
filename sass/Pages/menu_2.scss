@@ -1,0 +1,27 @@
+.container_page.menu_2{
+
+  .content_menu{
+    background: #fff5fe;
+  }
+
+  .entree{
+    color: #c67412;
+  }
+
+  .plat{
+    color: #a56799;
+  }
+
+  .dessert{
+    color: #6e4ccc;
+  }
+  
+
+  h2.menu_2{
+    background: -webkit-linear-gradient(#c67412, #a56799);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+
+
+}

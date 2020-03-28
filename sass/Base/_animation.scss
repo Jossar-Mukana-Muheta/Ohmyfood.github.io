@@ -77,11 +77,34 @@ figure:hover > img {
 
 span.souligner{
   border-top: hotpink solid 3px;
-  width: 0%;
+  width: 80%;
   margin-left: 30%;
 }
 
-.entree_plat_dessert:hover + span{
+h3:hover + span{
   animation-name: soulign;
   animation-duration: 2000ms ;
+}
+
+.undeline{
+  display: inline-block;
+  position: relative;
+}
+
+.undeline::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: hotpink;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.undeline:hover::before{
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }

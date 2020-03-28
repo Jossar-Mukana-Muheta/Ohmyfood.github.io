@@ -1,0 +1,19 @@
+.container_page.menu_3{
+  
+.content_menu{
+  background: #edefef;
+}
+
+img.line{
+
+  @include tablette{
+    height: 30px;
+  }
+
+  @include desktop{
+    height: 70px;
+  
+}
+}
+
+}
