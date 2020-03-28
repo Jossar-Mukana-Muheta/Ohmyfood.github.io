@@ -213,6 +213,7 @@ h3:hover + span {
   padding-right: 2.5rem;
   background-color: #569c87;
   border-radius: 10px;
+  font-family: cursive;
 }
 @media screen and (max-width: 320px) {
   .article h2 {
@@ -302,6 +303,9 @@ figure {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.container_page.menu_2 img.line.fleche_droit {
+  margin-top: -29px;
+}
 
 .container_page.menu_3 .content_menu {
   background: #edefef;
@@ -313,7 +317,7 @@ figure {
 }
 @media screen and (min-width: 1025px) {
   .container_page.menu_3 img.line {
-    height: 70px;
+    height: 50px;
   }
 }
 
@@ -335,7 +339,7 @@ figure {
 }
 @media screen and (min-width: 1025px) {
   .container_page.menu_4 img.line {
-    height: 70px;
+    height: 50px;
   }
 }
 
@@ -441,7 +445,7 @@ img.line {
 }
 @media screen and (min-width: 1025px) {
   img.line {
-    height: 80px;
+    height: 65px;
   }
 }
 
