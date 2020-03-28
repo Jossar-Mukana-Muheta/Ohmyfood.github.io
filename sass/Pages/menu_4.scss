@@ -1,0 +1,27 @@
+.container_page.menu_4{
+
+  font-family: 'Merienda'!important, cursive;
+
+  h2.menu_4{
+    background: -webkit-linear-gradient(#64b24f, #beff7f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+  
+  .content_menu{
+    background: #fdfffd;
+  }
+  
+  img.line{
+  
+    @include tablette{
+      height: 30px;
+    }
+  
+    @include desktop{
+      height: 70px;
+    
+  }
+  }
+  
+  }
