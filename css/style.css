@@ -64,13 +64,13 @@ h2:hover > .point {
   visibility: visible;
 }
 
-img {
+.items {
   background-color: #fff;
   z-index: 1;
   transition: transform 1000ms ease-in-out, opacity 700ms 20ms;
 }
 
-figure:hover > img {
+.container-menu__items:hover > .items {
   transform: scale(1.5);
   opacity: 0.3;
 }
@@ -163,20 +163,33 @@ h3:hover + span {
 }
 
 .container-menu {
+  justify-content: space-around;
   display: grid;
   grid-template-rows: 50% 50%;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 0.5em;
+  grid-gap: 10px;
   grid-template-areas: "1 2" "3 4";
+}
+@media screen and (max-width: 320px) {
+  .container-menu {
+    margin: 10%;
+    margin-bottom: 5%;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 767px) {
+  .container-menu {
+    margin: 10%;
+    margin-bottom: 5%;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .container-menu {
-    margin-left: 15%;
-    margin-right: 15%;
+    margin: 10%;
+    margin-bottom: 5%;
   }
 }
 @media screen and (min-width: 1025px) {
   .container-menu {
+    grid-auto-columns: 35%;
     margin-left: 15%;
     margin-right: 15%;
     row-gap: 38px;
@@ -221,12 +234,71 @@ h3:hover + span {
   }
 }
 
-figure {
+.container-menu__items {
   margin: 0;
   padding: 0;
   background: #fff;
   overflow: hidden;
   box-shadow: 1px 1px 3px lightgrey;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.items i {
+  background: -webkit-linear-gradient(#da5031, #d67835);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: xx-large;
+}
+.items a {
+  text-decoration: none;
+}
+
+.items.menu_1 {
+  background-color: #fcdfdb;
+}
+.items.menu_1 h2 {
+  color: #3d1319;
+}
+.items.menu_1 h3 {
+  color: #3d1319;
+  font-family: "Nanum Pen Script", cursive;
+}
+
+.items.menu_2 {
+  background-color: #fff5fe;
+}
+.items.menu_2 h2, .items.menu_2 h3 {
+  background: -webkit-linear-gradient(#c67412, #a56799);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.items.menu_3 {
+  background-color: #edefef;
+}
+.items.menu_3 h2, .items.menu_3 h3 {
+  font-style: italic;
+  font-family: cursive;
+  background: -webkit-linear-gradient(#0228DD, #a56799);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.items.menu_4 {
+  background-color: #fdfffd;
+}
+.items.menu_4 h2, .items.menu_4 h3 {
+  font-family: "Merienda", cursive;
+  background: -webkit-linear-gradient(#64b24f, #beff7f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .content_menu {

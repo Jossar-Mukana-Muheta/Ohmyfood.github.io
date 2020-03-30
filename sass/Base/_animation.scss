@@ -29,13 +29,13 @@ h2:hover > .point {
 
 ///////////////////////////ZOOM IMAGE + FLOU PAGE ACCUEIL/////////////////////////////
 
-img {
+.items {
   background-color: #fff;
   z-index: 1;
   transition: transform 1000ms ease-in-out, opacity 700ms 20ms;
 }
 
-figure:hover > img {
+.container-menu__items:hover > .items {
   transform: scale(1.5);
   opacity: 0.3;
 }

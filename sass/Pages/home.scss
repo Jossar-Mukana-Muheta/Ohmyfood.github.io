@@ -9,20 +9,31 @@
 }
 
 .container-menu {
+  justify-content: space-around;
   display: grid;
   grid-template-rows: 50% 50%;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 0.5em;
+  grid-gap: 10px;
   grid-template-areas:
     '1 2'
     '3 4';
 
+    @include smaller {
+      margin: 10%;
+      margin-bottom: 5%;
+    }
+
+    @include smartphone {
+      margin: 10%;
+      margin-bottom: 5%;
+    }
+
   @include tablette {
-    margin-left: 15%;
-    margin-right: 15%;
+    margin: 10%;
+      margin-bottom: 5%;
   }
 
   @include desktop {
+    grid-auto-columns: 35%;
     margin-left: 15%;
     margin-right: 15%;
     row-gap: 38px;
@@ -68,10 +79,78 @@
   }
 }
 
-figure {
+
+.container-menu__items{
   margin: 0;
   padding: 0;
   background: #fff;
   overflow: hidden;
   @include img-shadow;
+}
+
+.items{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  i{
+    background: -webkit-linear-gradient(#da5031,#d67835);
+    -webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-size: xx-large;
+
+  }
+
+  a{
+    text-decoration: none;
+  }
+  
+
+}
+
+.items.menu_1{
+  background-color: $colour-menu1;
+  h2{
+    color:  #3d1319;
+  }
+  h3{
+    color: #3d1319;
+    font-family: 'Nanum Pen Script', cursive;
+  }
+}
+
+.items.menu_2{
+  background-color: #fff5fe;
+
+  h2,h3{
+      background: -webkit-linear-gradient(#c67412, #a56799);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+}
+
+.items.menu_3{
+  background-color: $colour-menu3;
+
+  h2,h3{
+    font-style: italic;
+    font-family: cursive;
+    background: -webkit-linear-gradient(#0228DD, #a56799);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+}
+
+
+.items.menu_4{
+  background-color: $colour-menu4;
+  h2,h3{
+    font-family: 'Merienda', cursive;
+    background: -webkit-linear-gradient(#64b24f, #beff7f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
 }
